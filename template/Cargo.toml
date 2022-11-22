@@ -6,6 +6,7 @@ authors = ["#{AUTHOR}"]
 
 [package.metadata.ndk]
 targets = ["arm64-v8a"]
+platform = 24
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

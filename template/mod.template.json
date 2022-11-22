@@ -8,7 +8,9 @@
   "packageVersion": "1.26.0",
   "description": "#{DESCRIPTION}",
   "dependencies": [],
-  "modFiles": [],
+  "modFiles": [
+    "lib#{ID}.so"
+  ],
   "libraryFiles": [],
   "fileCopies": [],
   "copyExtensions": []
