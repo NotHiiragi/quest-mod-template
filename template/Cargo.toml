@@ -1,13 +1,17 @@
 [package]
 name = "#{ID}"
-version = "${version}"
-edition = "2021"
+version = "0.1.0"
+edition = "2018"
 authors = ["#{AUTHOR}"]
 
 [package.metadata.ndk]
 targets = ["aarch64-linux-android"]
 
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
+quest_hook = { git = "https://github.com/StackDoubleFlow/quest-hook-rs.git", features = ["unity2019"] }
+tracing = "0.1"

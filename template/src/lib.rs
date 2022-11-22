@@ -1,15 +1,15 @@
-#![feature(backtrace)]
-
-// Including/importing stuff
+use quest_hook::hook;
+use quest_hook::libil2cpp::{Il2CppObject, Il2CppString};
+use tracing::debug;
 
 #[no_mangle]
-pub extern "C" fn setup(){
-    //idk know, I am just looking at Ferns rust mods. but I saw quest_hook::setup!(); so ig if you use qh you add that here ¯\_(ツ)_/¯
+pub extern "C" fn setup() {
+    quest_hook::setup("#{ID}");
 }
 
 #[no_mangle]
 pub extern "C" fn load() {
-    info!("Installing hooks!");
-    //Your hooks here!
-    info!("Installed hooks!");
+    debug!("Installing Hooks!");
+    // Install your hook here!
+    debug!("Installed All Hooks!")
 }
