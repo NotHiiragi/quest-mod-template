@@ -1,0 +1,13 @@
+[package]
+name = "#{ID}"
+version = "${version}"
+edition = "2021"
+authors = ["#{AUTHOR}"]
+
+[package.metadata.ndk]
+targets = ["aarch64-linux-android"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]

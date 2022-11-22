@@ -1,0 +1,13 @@
+{
+  "name": "Quest Mod Template",
+  "author": "Original: Lauriethefish | Rust: Waffle",
+  "src": "./template",
+  "description": "Template for creating QuestPatcher/BMBF mods for the Oculus Quest in Rust!",
+  "placeholders": [
+    {"match": "#{NDKPATH}", "prompt": "The path to the android NDK", "cachable": true},
+    {"match": "#{ID}", "prompt": "The ID of the mod"},
+    {"match": "#{NAME}", "prompt": "The name of the mod"},
+    {"match": "#{AUTHOR}", "prompt": "The author of the mod"},
+    {"match": "#{DESCRIPTION}", "prompt": "The description of the mod"}
+  ]
+}
